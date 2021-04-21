@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS USERS;
+
+CREATE TABLE USERS (
+    id IDENTITY NOT NULL PRIMARY KEY,
+    username VARCHAR(255) NOT NULL UNIQUE,
+    firstname VARCHAR(255),
+    lastname VARCHAR(255),
+    age SMALLINT,
+    phonenumber VARCHAR(11) UNIQUE
+);
